@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Talk</title>
+    <link rel="stylesheet" href="{{ url_for('auth.static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Talk</h1>
+    </header>
+    <main>
+        <section class="login-form">
+            <h2>Login</h2>
+            <form action="{{ url_for('auth.login') }}" method="POST">
+                {{ form.csrf_token }}
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                
+                <button type="submit">Login</button>
+            </form>
+            <div class="links">
+                <a href="/forgot-username">Forgot Username?</a>
+                <a href="/reset-password">Reset Password</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

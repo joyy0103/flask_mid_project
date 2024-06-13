@@ -1,0 +1,79 @@
+/* Reset some basic styles */
+body, h1, h2, h5, p, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+}
+
+.left-tab {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.right-tab {
+    flex: 3;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.chat {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.chat p {
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 1rem;
+    color: #555;
+}
+
+.timestamp {
+    font-size: 0.85rem;
+    color: #888;
+}

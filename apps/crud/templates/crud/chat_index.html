@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Talk</title>
+    <link rel="stylesheet" href="{{ url_for('crud.static', filename='style3.css' ) }}" />
+</head>
+<body>
+    <header>
+        <h1>Talk</h1>
+    </header>
+    <main>
+        <section class="chat-window">
+            <div class="message received">
+                <p>이제부턴 정말 공부 뿐이야.</p>
+                <span class="timestamp">2:00 PM</span>
+            </div>
+            <div class="message sent">
+                <p>...</p>
+                <span class="timestamp">2:01 PM</span>
+            </div>
+            <div class="message received">
+                <p>에잇! 아무리 마음을 다스리려 해도 안돼!</p>
+                <span class="timestamp">2:02 PM</span>
+            </div>
+            <div class="message sent">
+                <p>일단 공부는 접는다.</p>
+                <span class="timestamp">2:03 PM</span>
+            </div>
+            <!-- Add more messages as needed -->
+        </section>
+        <form class="message-form">
+            <input type="text" placeholder="Type a message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>

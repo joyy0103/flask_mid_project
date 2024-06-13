@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Talk</title>
+    <link rel="stylesheet" href="{{ url_for('crud.static', filename='style1.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Talk</h1>
+    </header>
+    <main>
+        <div class="tabs">
+            <div class="left-tab">
+                <a href="{{ url_for('crud.friends') }}">
+                    <img src="{{ url_for('crud.static', filename='user.png') }}" alt="Friends" class="icon">
+                </a>
+                <br>
+                <a href="{{ url_for('crud.chats_index') }}">
+                    <img src="{{ url_for('crud.static', filename='chat.png') }}" alt="Chats" class="icon">
+                </a>
+            </div>
+            <div class="right-tab">
+                <section>
+                    <h2>Friends</h2>
+                    <div class="friend">
+                        <h3>Friend 1</h3>
+                        <p>Status message</p>
+                    </div>
+                    <div class="friend">
+                        <h3>Friend 2</h3>
+                        <p>Status message</p>
+                    </div>
+                    <div class="friend">
+                        <h3>Friend 3</h3>
+                        <p>Status message</p>
+                    </div>
+                    <!-- Add more friends as needed -->
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

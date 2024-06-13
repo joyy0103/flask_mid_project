@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Talk</title>
+    <link rel="stylesheet" href="{{ url_for('crud.static', filename='style2.css' ) }}" />
+</head>
+<body>
+    <header>
+        <h1>Talk</h1>
+    </header>
+    <main>
+        <div class="tabs">
+            <div class="left-tab">
+                <a href="{{ url_for('crud.friends') }}">
+                    <img src="{{ url_for('crud.static', filename='user.png') }}" alt="Friends" class="icon">
+                </a>
+                <br>
+                <a href="{{ url_for('crud.chats_index') }}">
+                    <img src="{{ url_for('crud.static', filename='chat.png') }}" alt="Chats" class="icon">
+                </a>
+            </div>
+            <div class="right-tab">
+                <section>
+                    <h2>Chats</h2>
+                    <div class="chat">
+                        <a href="{{ url_for('crud.chat_index') }}">
+                            <h5>Chat Room 1</h5>
+                            <p>Chat preview message...</p>
+                            <span class="timestamp">2:00 PM</span>
+                        </a>
+                    </div>
+                    <div class="chat">
+                        <a href="{{ url_for('crud.chat_index') }}">
+                            <h5>Chat Room 2</h5>
+                            <p>Chat preview message...</p>
+                            <span class="timestamp">3:00 PM</span>
+                        </a>
+                    </div>
+                    <div class="chat">
+                        <a href="{{ url_for('crud.chat_index') }}">
+                            <h5>Chat Room 3</h5>
+                            <p>Chat preview message...</p>
+                            <span class="timestamp">4:00 PM</span>
+                        </a>
+                    </div>
+                    <!-- Add more chat rooms as needed -->
+                </section>
+            </div>
+        </div> 
+    </main>
+</body>
+</html>
